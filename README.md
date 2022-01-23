@@ -25,3 +25,14 @@ Gitが苦手な方は、GitHubの便利な ブランチ機能を利用してく�
 フィルターで特定のブランチを選択し、オンラインでソースコードをブラウズすることができます。
 
 Gitについてもっと詳しく知りたい方は、無料で公開されている「 [Git Immersion](http://gitimmersion.com/) 」または「 [Try Git](http://www.codeschool.com/courses/try-git) 」（いずれも英語版）がお勧めです。
+
+----
+
+このリポジトリのRailsアプリはJunichiItoさんが日本語版独自のメンテナンス用として用意された[ソースコード](https://github.com/JunichiIto/everydayrails-rspec-jp-2022/)を更にフォークし、個人的にDockerを用いて[Everyday Rails - RSpecによるRailsテスト入門](https://leanpub.com/everydayrailsrspec-jp/) を学ぶために用意したものです。
+細かな点を修正していますが、基本的には元のコードと大差なく動作するよう設定しております。
+
+Everyday Railsの学習にDockerを用いたい方は、こちらのdevelopブランチの
+- Dockerfile
+- docker-compose.yml
+- entrypoint.sh
+が参考になるかと思います。
