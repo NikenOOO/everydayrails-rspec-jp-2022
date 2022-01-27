@@ -1,3 +1,24 @@
+## リポジトリに関して
+こちらのリポジトリは、JunichiItoさんが日本語版独自のメンテナンス用として用意された[ソースコード](https://github.com/JunichiIto/everydayrails-rspec-jp-2022/)をフォークし、
+Dockerを用いて[Everyday Rails - RSpecによるRailsテスト入門](https://leanpub.com/everydayrailsrspec-jp/)を個人で学ぶために用意したものです。
+
+基本的に元のコードと同じですが、
+- Dockerfile
+- docker-compose.yml
+- entrypoint.sh
+- spec/support/capybara.by
+を別途、用意しています。
+
+教材の写経等にDockerの開発環境を利用したい方は、気軽にご活用ください。
+実際にこのリポジトリをご利用の場合は、第1章の01-untestedブランチに上記のファイルを追加したのみの
+**develop**ブランチを活用すると楽に環境構築ができるかと思います。
+
+また、もしRailsを学習されていて、たまたまこのブランチにたどり着いた方がおられましたら、
+ぜひ[Everyday Rails - RSpecによるRailsテスト入門](https://leanpub.com/everydayrailsrspec-jp/)を一度読んでみてください。
+
+----
+
+
 [![RSpec](https://github.com/JunichiIto/everydayrails-rspec-jp-2022/actions/workflows/rspec.yml/badge.svg)](https://github.com/JunichiIto/everydayrails-rspec-jp-2022/actions/workflows/rspec.yml)
 
 # *Everyday Rails Testing with RSpec* sample application (2022 Japanese edition)
@@ -25,14 +46,3 @@ Gitが苦手な方は、GitHubの便利な ブランチ機能を利用してく�
 フィルターで特定のブランチを選択し、オンラインでソースコードをブラウズすることができます。
 
 Gitについてもっと詳しく知りたい方は、無料で公開されている「 [Git Immersion](http://gitimmersion.com/) 」または「 [Try Git](http://www.codeschool.com/courses/try-git) 」（いずれも英語版）がお勧めです。
-
-----
-
-このリポジトリのRailsアプリはJunichiItoさんが日本語版独自のメンテナンス用として用意された[ソースコード](https://github.com/JunichiIto/everydayrails-rspec-jp-2022/)を更にフォークし、個人的にDockerを用いて[Everyday Rails - RSpecによるRailsテスト入門](https://leanpub.com/everydayrailsrspec-jp/) を学ぶために用意したものです。
-細かな点を修正していますが、基本的には元のコードと大差なく動作するよう設定しております。
-
-Everyday Railsの学習にDockerを用いたい方は、こちらのdevelopブランチの
-- Dockerfile
-- docker-compose.yml
-- entrypoint.sh
-が参考になるかと思います。
