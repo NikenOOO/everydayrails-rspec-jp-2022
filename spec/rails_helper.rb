@@ -66,4 +66,7 @@ RSpec.configure do |config|
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include RequestSpecHelper, type: :request
   config.include Devise::Test::IntegrationHelpers, type: :system
+
+  # omit "Factorybot."
+  config.include FactoryBot::Syntax::Methods
 end

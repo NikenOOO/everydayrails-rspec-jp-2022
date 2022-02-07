@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "Tasks", type: :system do
-  let(:user) { FactoryBot.create(:user) }
+  let(:user) { create(:user) }
   let(:project) {
-    FactoryBot.create(:project,
+    create(:project,
       name: "RSpec tutorial",
       owner: user)
   }
