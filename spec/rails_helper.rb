@@ -65,7 +65,15 @@ RSpec.configure do |config|
   # Use Devise helpers in tests
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include RequestSpecHelper, type: :request
+  config.include Devise::Test::IntegrationHelpers, type: :system
 
   # omit "Factorybot."
   config.include FactoryBot::Syntax::Methods
+end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
 end

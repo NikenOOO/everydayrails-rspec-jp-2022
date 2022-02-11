@@ -31,6 +31,14 @@ RSpec.describe "Projects Api", type: :request do
 
   it 'creates a project' do
     user = create(:user)
+    create(:project, name: "Sample Project")
+    create(:project, name: "Second Sample Project", owner: user)
+
+    project_attributes = attributes_for(:project)
+  end
+
+  it 'creates a project' do
+    user = create(:user)
 
     project_attributes = attributes_for(:project)
 
