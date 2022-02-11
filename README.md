@@ -1,3 +1,24 @@
+## リポジトリに関して
+こちらのリポジトリは、JunichiItoさんが日本語版独自のメンテナンス用として用意された[ソースコード](https://github.com/JunichiIto/everydayrails-rspec-jp-2022/)をフォークし、
+Dockerを用いて[Everyday Rails - RSpecによるRailsテスト入門](https://leanpub.com/everydayrailsrspec-jp/)を個人で学ぶために用意したものです。
+
+基本的に元のコードと同じですが、
+- Dockerfile
+- docker-compose.yml
+- entrypoint.sh
+- spec/support/capybara.by
+を別途、用意しています。
+
+教材の写経等にDockerの開発環境を利用したい方は、気軽にご活用ください。
+実際にこのリポジトリをご利用の場合は、第1章の01-untestedブランチに上記のファイルを追加したのみの
+**develop**ブランチを活用すると楽に環境構築ができるかと思います。
+
+また、もしRailsを学習されていて、たまたまこのブランチにたどり着いた方がおられましたら、
+ぜひ[Everyday Rails - RSpecによるRailsテスト入門](https://leanpub.com/everydayrailsrspec-jp/)を一度読んでみてください。
+
+----
+
+
 [![RSpec](https://github.com/JunichiIto/everydayrails-rspec-jp-2022/actions/workflows/rspec.yml/badge.svg)](https://github.com/JunichiIto/everydayrails-rspec-jp-2022/actions/workflows/rspec.yml)
 
 # *Everyday Rails Testing with RSpec* sample application (2022 Japanese edition)
